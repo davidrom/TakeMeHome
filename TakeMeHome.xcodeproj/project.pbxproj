@@ -13,6 +13,9 @@
 		7A1EDA7019D5E4AB00A306F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A1EDA6F19D5E4AB00A306F8 /* Images.xcassets */; };
 		7A1EDA7319D5E4AB00A306F8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A1EDA7119D5E4AB00A306F8 /* LaunchScreen.xib */; };
 		7A1EDA7F19D5E4AB00A306F8 /* TakeMeHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1EDA7E19D5E4AB00A306F8 /* TakeMeHomeTests.swift */; };
+		7A1EDA9119D5F24900A306F8 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A1EDA9019D5F24900A306F8 /* home.png */; };
+		7A1EDAF019EE033300A306F8 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1EDAEF19EE033300A306F8 /* Location.swift */; };
+		A2EBCF7B19EAD6E200ED793B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2EBCF7A19EAD6E200ED793B /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		7A1EDA7819D5E4AB00A306F8 /* TakeMeHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeMeHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A1EDA7D19D5E4AB00A306F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A1EDA7E19D5E4AB00A306F8 /* TakeMeHomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeMeHomeTests.swift; sourceTree = "<group>"; };
+		7A1EDA9019D5F24900A306F8 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		7A1EDAEF19EE033300A306F8 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		A2EBCF7A19EAD6E200ED793B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2EBCF7B19EAD6E200ED793B /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +66,7 @@
 		7A1EDA5A19D5E4AB00A306F8 = {
 			isa = PBXGroup;
 			children = (
+				A2EBCF7A19EAD6E200ED793B /* CoreLocation.framework */,
 				7A1EDA6519D5E4AB00A306F8 /* TakeMeHome */,
 				7A1EDA7B19D5E4AB00A306F8 /* TakeMeHomeTests */,
 				7A1EDA6419D5E4AB00A306F8 /* Products */,
@@ -79,10 +87,11 @@
 			children = (
 				7A1EDA6819D5E4AB00A306F8 /* AppDelegate.swift */,
 				7A1EDA6A19D5E4AB00A306F8 /* ViewController.swift */,
+				7A1EDAEE19EE030B00A306F8 /* Models */,
 				7A1EDA6C19D5E4AB00A306F8 /* Main.storyboard */,
+				7A1EDA6619D5E4AB00A306F8 /* Supporting Files */,
 				7A1EDA6F19D5E4AB00A306F8 /* Images.xcassets */,
 				7A1EDA7119D5E4AB00A306F8 /* LaunchScreen.xib */,
-				7A1EDA6619D5E4AB00A306F8 /* Supporting Files */,
 			);
 			path = TakeMeHome;
 			sourceTree = "<group>";
@@ -90,6 +99,7 @@
 		7A1EDA6619D5E4AB00A306F8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7A1EDA9019D5F24900A306F8 /* home.png */,
 				7A1EDA6719D5E4AB00A306F8 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -110,6 +120,14 @@
 				7A1EDA7D19D5E4AB00A306F8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7A1EDAEE19EE030B00A306F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7A1EDAEF19EE033300A306F8 /* Location.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +179,7 @@
 				TargetAttributes = {
 					7A1EDA6219D5E4AB00A306F8 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = U6TRUYSFN5;
 					};
 					7A1EDA7719D5E4AB00A306F8 = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -192,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A1EDA9119D5F24900A306F8 /* home.png in Resources */,
 				7A1EDA6E19D5E4AB00A306F8 /* Main.storyboard in Resources */,
 				7A1EDA7319D5E4AB00A306F8 /* LaunchScreen.xib in Resources */,
 				7A1EDA7019D5E4AB00A306F8 /* Images.xcassets in Resources */,
@@ -213,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A1EDA6B19D5E4AB00A306F8 /* ViewController.swift in Sources */,
+				7A1EDAF019EE033300A306F8 /* Location.swift in Sources */,
 				7A1EDA6919D5E4AB00A306F8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,9 +357,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TakeMeHome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -346,9 +370,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TakeMeHome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -405,6 +432,7 @@
 				7A1EDA8419D5E4AB00A306F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7A1EDA8519D5E4AB00A306F8 /* Build configuration list for PBXNativeTarget "TakeMeHomeTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +441,7 @@
 				7A1EDA8719D5E4AB00A306F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
