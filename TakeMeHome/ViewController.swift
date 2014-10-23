@@ -100,7 +100,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 {
                     encodedAddressString = encodedAddressString.stringByReplacingOccurrencesOfString(",", withString: "%2C", options: NSStringCompareOptions.LiteralSearch, range: nil)
                 }
-                                
+                
                 println("home address = \(homeAddress)")
                 println("encoded home address = \(encodedAddressString)")
                 
@@ -124,18 +124,32 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 let url = NSURL(string: uberDeepLink)
 
                 
-                // If Uber is installed on the device, then launch the app
-                // UIApplication.sharedApplication().openURL(NSURL.URLWithString(uberDeepLink))
-                UIApplication.sharedApplication().openURL(url!)
+                // If Uber is installed on the device, then launch the app, if not redirect user to sign up page in Safari
+                let uberURLScheme = NSURL(string: "uber://")
+                if UIApplication.sharedApplication().canOpenURL(uberURLScheme!) {
+                    // let canOpen = UIApplication.sharedApplication().canOpenURL(uberAppURL)
+                    let canOpen = UIApplication.sharedApplication().openURL(url!)
+                    // println("Can open \"\(uberURLScheme)\": \(canOpen)")
+                }
+                else {
+                    let signupURL = NSURL(string: "https://www.uber.com/invite/drv52")
+                    UIApplication.sharedApplication().openURL(signupURL!)
+                    // UIApplication.sharedApplication().openURL(NSURL(string: "http://www.stackoverflow.com"))
+                }
+                
+                
             }
         })
+      
+    
         
-        
-        // If Uber app is not installed on the device
-        // uberDeepLink = "https://www.uber.com/invite/drv52"
     
     }
     
+    
+    @IBAction func getEstimatesButtonPressed(sender: AnyObject) {
+        
+    }
     
 
 }
