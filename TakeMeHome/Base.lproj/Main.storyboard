@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Home Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AfB-ts-eHO">
@@ -45,20 +45,6 @@
                                     <rect key="frame" x="179" y="60" width="56" height="50"/>
                                 </variation>
                             </imageView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snU-RQ-aJb">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                <state key="normal" title="GET ESTIMATES">
-                                    <color key="titleColor" red="0.18039215689999999" green="0.18039215689999999" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="121" y="376" width="173" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="getEstimatesButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tev-dg-9jF"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -66,7 +52,6 @@
                                 <exclude reference="AfB-ts-eHO"/>
                                 <exclude reference="KAr-19-aW9"/>
                                 <exclude reference="sBN-xy-cWe"/>
-                                <exclude reference="snU-RQ-aJb"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -74,15 +59,12 @@
                                 <include reference="AfB-ts-eHO"/>
                                 <include reference="KAr-19-aW9"/>
                                 <include reference="sBN-xy-cWe"/>
-                                <include reference="snU-RQ-aJb"/>
                             </mask>
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="getEstimatesButtonPressed" destination="snU-RQ-aJb" id="vWE-cT-Ctd"/>
                         <outlet property="homeAddressTextField" destination="AfB-ts-eHO" id="PYt-p4-2fN"/>
-                        <outlet property="homeIconPressed" destination="sBN-xy-cWe" id="7da-YH-gnW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

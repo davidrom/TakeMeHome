@@ -147,9 +147,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     
-    @IBAction func getEstimatesButtonPressed(sender: AnyObject) {
-        
-    }
+
     
 
 }
